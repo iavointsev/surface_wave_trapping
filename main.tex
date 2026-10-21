@@ -1,0 +1,353 @@
+\documentclass[aps,twocolumn]{revtex4-2}
+
+\usepackage[english]{babel}
+
+\usepackage{amsfonts,amsmath,bm,amssymb,revsymb,color,braket}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[makeroom]{cancel}
+
+
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+\definecolor{dukeblue}{rgb}{0.0, 0.0, 0.61}
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55}
+\definecolor{armygreen}{rgb}{0.29, 0.33, 0.13}
+\definecolor{coquelicot}{rgb}{1.0, 0.22, 0.0}
+\definecolor{fucsiak}{rgb}{0.4, 0.08, 0.4}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
+\definecolor{blue-green}{rgb}{0.0, 0.87, 0.87}
+
+\usepackage[unicode=true,bookmarksnumbered,colorlinks=true, citecolor=burgundy, linkcolor=blue, urlcolor=cobalt]{hyperref}
+
+
+
+
+
+
+\begin{document}
+
+\title{Surface wave propagation against a steady ring current in a square basin}
+
+\author{Maria D. Klimenko}
+
+%\affiliation{Landau Institute for Theoretical Physics, Russian Academy of Sciences,\\1-A Akademika Semenova av., 142432 Chernogolovka, Russia}
+
+\affiliation{Osipyan Institute of Solid State Physics, Russian Academy of Sciences,  \\ Chernogolovka, Moscow region, 142432 Russia}
+
+
+
+
+\author{Ivan A. Vointsev}
+
+\affiliation{National Research University Higher School of
+Economics, Faculty of Physics, Myasnitskaya 20, 101000
+Moscow, Russia}
+
+
+
+\author{Sergey V. Filatov}
+
+%\affiliation{Landau Institute for Theoretical Physics, Russian Academy of Sciences,\\1-A Akademika Semenova av., 142432 Chernogolovka, Russia}
+\affiliation{Osipyan Institute of Solid State Physics, Russian Academy of Sciences,  \\ Chernogolovka, Moscow region, 142432 Russia}
+
+
+\author{Sergey S. Vergeles}
+
+\affiliation{Landau Institute for Theoretical Physics,
+Russian Academy of Sciences,\\1-A Akademika Semenova av.,
+142432 Chernogolovka, Russia}
+
+\affiliation{National Research University Higher School of
+Economics, Faculty of Physics, Myasnitskaya 20, 101000
+Moscow, Russia}
+
+\email{ssver@itp.ac.ru}
+
+
+
+\begin{abstract}
+    Surface waves propagating against a ring current are observed experimentally and investigated theoretically. The ring current is produced in a square basin by means of rotating disk mounted flush at the bottom. The same disk excites wave motiondue to its axis being slightly tilted from its vertical axis of rotation. A corresponding analytical theory is developed for cylindrical geometry. It allows one to find eigenmodes of surface waves in a cylindrical basin on a background of an established axially symmetric stationary ring current. A comparison with the experiment shows good agreement for the eigenfrequencies and spatial structure of those modes which reach the side walls of the basin and thus are not trapped by the current. The trapped modes predicted by the theory are not observed in our setup, that is attributed likely due to the mode-excitation mechanism. 
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Surface waves undergo refraction and reflection when they travel on a background of horizontally inhomogeneous surface current, see e.g. a review \cite{peregrine1976interaction} and a book \cite{buhler2009waves}. In particular, this leads to wave trapping, when a wave is prohibited from leaving a certain area due to the refraction \cite{kenyon1971wave}. An example are waves propagating against jet current, which is localized in transverse horizontal direction \cite{lavrenov1998wave,holthuijsen1991effects}, that leads to wave focusing and enhancement of wave steepness \cite{quilfen2018storm}.
+
+In this work, we consider a wave refraction and trapping in a ring current. The current is experimentally realized in a closed basin by means of rotating disk mounted flush at the basin bottom at its center \cite{yang2019axisymmetric,piva2005steady}. The wave excitation is produced by the same disk due to a slight deviation of its axis from the vertical. Only those waves which propagate against the current are considered and thus have tendency to be trapped by the current. The fluid flow, including both the current and wave motion, is measured at the free surface. Generally, in the shallow water regime, there is a possibility to realize a wave refraction and trapping by using a guiding ridge at bottom \cite{sepulveda2020observation}. In our case, the limit of deep water is reached, for which this possibility is absent. 
+
+In order to interpret the experimental data, we develop a theory which describes surface wave eigenmodes to validate our experimental observations. Our basin has square form, whereas the theory is constructed for axially symmetric geometry. However, we obtain a reasonable agreement with the experimental data for modes which are at least predominantly localized near the maximum of the azimuthal velocity within the vortex and thus have relatively small amplitude near the side walls of the basin. The theory assumes that the surface current is uniform along the vertical. This is precisely the case for a ring current produced by the rotating disk \cite{yang2019axisymmetric}, the homogeneity is violated only within the relatively thin boundary layer near the bottom. The vertical homogeneity is enforced by the Coriolis force according to the Taylor–Proudman theorem \cite{davidson2024dynamics}. The existence of the boundary layer is not essential for the theory as the observed surface wave modes belong to deep water regime. The radial dependence of the azimuth velocity includes inner core where a solid body rotation is established. The velocity maximum is reached at the core edge which radius is approximately one half of the basin radius for our geometry. Beyond the core, the velocity decreases toward the side wall. The secondary flows are relatively weak and are not accounted in the theory.
+
+General approaches are developed to describe the wave propagation on a background of a current in the linear regime and in the limit of small gradients of the current compared to the wave frequency, see \cite{vergeles2024role,vergeles2025nonlinear} or \cite{mcwilliams2022quasi}. In our case, however, a more productive approach is the one developed in \cite{shrira2014trapped,shrira2014nonlinear} for rectilinear geometry which directly corresponds to a wave travelling against a straight jet current \cite{lavrenov1998wave,holthuijsen1991effects}. When the current is homogeneous along the vertical, it is possible to derive an exact closed wave equation in terms of one field, e.g. pressure field. This is appropriate for the cylindrical geometry as well. 
+
+In \cite{torres2018waves}, a wave propagation on a background of a vortex was considered. The vortex was produced by a source distributed along a vertical axis and had azimuth and radial components decreasing inversely to the distance to the source. In such a vortex, there is no waves trapped in radial direction, although amplitude of a scattering wave is enhanced due to a presence of quasi-bounded mode. In our case, our theory predicts that there exist modes which are trapped. Amplitude of such mode decreases exponentially toward the side wall. We observe qualitative and even quantitative agreement between the theory and experiment for those modes which are delocalized, that is which reach the side wall and reflect from it. However, we do not observe experimentally any trapped mode, although their parameters, such as frequency and axial number, do not differ substantially from neighbouring delocalized modes. We attribute this shortcoming to the mode-excitation mechanism, which appears to require an interaction between the flow oscillations imposed by the rotation of the tilted disk and the boundaries of the flow.
+
+We describe the experimental setup in Section~\ref{sec:experimental-setup}. The theory is developed in Section~\ref{sec:theory}. The comparison between the experimental and analytical results is implemented in Section~\ref{sec:results}. A brief conclusion is presented in Section~\ref{sec:conclusion}.
+
+
+
+\section{Experimental setup}
+\label{sec:experimental-setup}
+
+A square basin of size $70\times 70 \times 10\,\text{cm}$ is filled by distilled water of depth $D = 10\,\text{cm}$. The side walls of the basing are made of glass. A disk of radius $30\,\text{cm}$ was mounted flush at the center of the bottom. The disk can rotate around the vertical axis with a fixed angular velocity under action of a drive. A sketch of the experimental setup is given in the inset of Figure~\ref{fig:U-profiles}.
+
+\begin{figure}[t]
+\begin{picture}(230,140)
+    \put(0,0){\includegraphics[width=0.95\linewidth]{figures/profiles.pdf}}
+    \put(35,12){\includegraphics[width=0.35\linewidth]{figures/scheme_nut.pdf}}
+\end{picture}
+\caption{Radial profiles of the azimuth mean velocity in the experiment. Thick orange line is the result of averaging over the angle; at distances $r>35\,\text{cm}$ the averaging is implemented only over available part of the full circle. Solid blue (along one direction) and black (along the other direction) lines corresponds to the velocity profile along lines parallel to the side walls. Dashed line is for a diagonal direction. Inset: a scheme of the experimental setup.}
+\label{fig:U-profiles}
+\end{figure}
+
+The horizontal components of the fluid velocity $v^x$, $v^y$ at its surface is measured by PIV-method. Across the free surface, a polyamide PA-12 particles are scattered. A camera detecting the horizontal motion of the particles is mounted above the basin at its axis. For each experiment, a video of duration $T=175\,\text{s}$ is recorded, the frames rate is $24\,\text{Hz}$.
+
+Ten roughly uniformly distributed angular velocities in range $0.024 ... 0.3\,\text{Hz}$ were tested. In each case, the radial profile of azimuth velocity $U$ was measured in the polar system $\{r,\varphi\}$ co-centered with the basin. It was observed that all the profiles coincide after the normalizing their amplitude on the disk rotation speed. This is an evidence for the mean flow has a linear response and it can be considered as a laminar one. The profiles $U(r)$ averaged over the azimuth angle $\varphi$ and for selected directions are plotted in Figure~\ref{fig:U-profiles}. In what follows, we are interested only in the experiment with the highest disk rotation speed $\Omega \approx 0.31\,\text{Hz}$. We deal with pure water, so the Reynolds number characterizing the mean flow is $\mathrm{Re} = 40 000$ taking characteristic velocity and length be equal to $25\,\text{cm}/\text{s}$ and $15\,\text{cm}$ respectively. 
+
+Our setup is similar to that explored in \cite{yang2019axisymmetric}. The difference is only the basing in our case has square form, whereas it has cylindrical geometry in \cite{yang2019axisymmetric}. Despite the difference, the radial profiles $U(r)$ correspond well to each other. In particular, the core within which the fluid exhibits the solid rotation is of radius \hbox{$\approx 14\,\text{cm}$} in our case, that is one half of the disk radius. The ratio corresponds to the $U(r)$-profiles in \cite{yang2019axisymmetric}, where the position of the $U(r)$-maximum was established to depend on the aspect ratio $D/R$. The angular velocity $U/r$ reaches its maximum $\Omega$ at the center and then slightly decreases toward the core edge, that corresponds to the observations \cite{yang2019axisymmetric} as well. We did not measured the vertical profile of the azimuth velocity, which we believe to be uniform excepting the thin boundary layer near the bottom according to the measurements of~\cite{yang2019axisymmetric}. 
+
+The fluid surface deformation due to the centrifugal forces is relatively small. To estimate the difference in water surface levels between the edge and the center, write down Euler's equation.
+\begin{equation}\label{eq:N-S}
+    \partial_t {\bm v} + ({\bm v}\nabla){\bm v} = - \nabla P_{\mathrm{total}},
+\end{equation}
+where we took the water density be equal to unity and the physical pressure the pressure is $P_{\mathrm{total}} = P - gz$. If the flow is axially symmetric and constant, the radial projection of Euler equation (\ref{eq:N-S}) is 
+\begin{equation}
+    \partial_r P - U^2/r = 0. 
+\end{equation}
+The boundary condition is $P = gH$ at the fluid surface $z=H(r)$ as the physical pressure $P_{\mathrm{total}} = 0$ here up to the constant atmospheric pressure. At given $U(r)$, the solution for the pressure is 
+\begin{equation}
+    H(r) = H(0) 
+    + \frac{1}{g}\int\limits_0^r \mathrm{d}r^\prime \frac{U^2(r^\prime)}{r^\prime},
+    \qquad 
+    \int\limits_0^R Hr\mathrm{d}r = 0.
+\end{equation}
+The last integral condition states, than the total volume of the fluid is conserved. For the profile presented in Figure~\ref{fig:spectrum}, the difference $H(R) - H(0) \approx 8\,\text{mm}$ assuming $R=47\,\text{cm}$. This is 12 times smaller than the water depth~$D$. 
+
+There are secondary flows directed in radial and vertical direction and produces by the boundary layer \cite{yang2019axisymmetric}. The flows are small compared to the azimuth velocity. In our case, the measured radial mean velocity at the surface is relatively small as well, $U^r/U^\varphi\sim 0.1$ and it is not axially symmetric but follows the symmetry of the square basin.
+
+The disk rotation excites oscillatory wave as well, since the disk plane is slightly tilted at the angle equal to $1^\circ$, whereas the rotation axis is directed vertically with relatively higher precision. Thus the disk rotation periodically influences the fluid motion. The measured frequency spectrum of the velocity field demonstrates sufficient response only at the harmonics that are multiples of $\Omega$, see Figure~\ref{fig:spectrum}. The peaks are quite narrow, so a possible nonlinear broadening of the peaks can be neglected and the system can be assumed to be in linear response regime. No monotonic behavior of the peak amplitude with the frequency is observed. This is a consequence of those overtones of $\Omega$ with high intensities are closer to one of resonant modes of the system than the others, see below.
+
+
+\begin{figure}[t]
+    \begin{picture}(230,140)
+    \put(10,0){\includegraphics[width=0.85\linewidth]{figures/spectrum.pdf}}
+    \put(225,10){\vbox{\hbox{{\large$\omega,$}} \hbox{Hz}}}
+    \put(0,55){\rotatebox{90}{{\large $E_\omega$}, arb. u.}}
+    \end{picture}
+    \caption{The energy spectrum of the horizontal motion at the surface, $E_\omega = (\langle|v^x_\omega|^2\rangle + \langle |v^y_\omega|^2\rangle)/2$, angle brackets denote averaging over the surface. The positions of the peaks are equal to integers multiplies of the disk rotation angular velocity $\Omega$.}
+    \label{fig:spectrum}
+\end{figure}
+
+
+
+
+\section{Theory}
+\label{sec:theory}
+
+Developing a theory, we assume axial symmetry of the basin which radius is $R$ and the depth is $D$. We introduce the corresponding cylindrical coordinate system $\{r,\varphi,z\}$, and $z=0$ is the unperturbed fluid surface. The ring current is steady and also axially symmetric, ${\bm U} = U(r) {\textbf e}_\varphi$, where ${\textbf e}_\varphi$ is the unit vector in azimuth direction. The complete velocity field of the flow ${\bm v}$ is divided onto the current velocity and the velocity of wave motion ${\bm u}$, ${\bm v} = {\bm U}+{\bm u}$. As we are interested primarily in waves with quite small characteristic wavelength $\lambda$, $\lambda/2\pi \lesssim D$, we disregard the vertical dependence of the  mean azimuth velocity $U^\varphi$ inside the boundary layer near the bottom. We also neglect the small radial and vertical velocity. 
+
+The Euler equation (\ref{eq:N-S}) linearized with respect to the surface wave amplitude and the continuity equation are 
+\begin{equation}\label{linearized:001}
+    \partial_t {\bm u}
+    +
+    ({\bm U} \nabla) {\bm u}
+    +
+    ({\bm u} \nabla){\bm U}
+    =
+    -\nabla p,
+    \qquad 
+    \mathop{\mathrm{div}}{\bm u} = 0.
+\end{equation}
+The boundary conditions are $u^z = 0$ at the bottom and $u^r=0$ at the vertical boundary. Let the form of the free surface is $z = H + h$, where the part $h$ corresponds to the wave motion. At the free surface, the kinematic boundary condition is
+\begin{equation}\label{BC:kinematic}
+    \partial_t h + \big({\bm U}\vert_{z=0} \nabla\big) h 
+    = 
+    u^z\big\vert_{z=0}.
+\end{equation}
+The dynamical boundary condition is 
+\begin{equation}\label{BC:dynamic}
+    p + h \partial_z P = gh.
+\end{equation}
+The term $h\partial_z P$ is zero due to assumed vertical homogeneity of the mean flow. We disregard the capillary effects due to the characteristic wavelength corresponds to the gravity wavelength range.
+
+In order to implement the mode analysis, we assume that the mode under the consideration is characterized by frequency $\omega$ and axial number $m$, so all the wave fields $p, u^r, u^\varphi, u^z$ are proportional to $\exp(im\varphi - i \omega t)$. Then the components of the Euler equation (\ref{linearized:001}) are 
+\begin{equation}\label{u_r_init}
+    \begin{aligned}
+        -i\widetilde \omega u_r - 2(U/r)u_\varphi &= -\partial_r p,
+        \\[5pt]
+        -i\widetilde \omega u_\varphi + 
+            \big(2(U/r) + \Sigma\big) u_r &
+            = -i(m/r)\,p,
+        \\[5pt]
+        -i\widetilde \omega u_z &= -\partial_z p,
+    \end{aligned}
+\end{equation}
+where the shifted frequency due to the Doppler effect $\widetilde \omega(r) = \omega - m U/r$ and the local shear rate produced by the mean flow $\Sigma = r \partial_r (U/r)$. The continuity equation is 
+\begin{equation}\label{continuity-eq}
+    \frac{\partial_r(r u_r)}{r} +\frac{im u_\varphi}{r} + \partial_z u_z 
+    = 0.
+\end{equation}
+It is possible to express all the velocity components via the pressure $p$ using the linearized Euler equations (\ref{u_r_init}),
+\begin{equation}
+    \begin{aligned}
+    u_z = & \,-\frac{i}{\widetilde\omega }\,\partial_z p,
+    \qquad 
+    u_r = \frac{i}{\Lambda}
+        \left(
+        \widetilde\omega\,\partial_r - \frac{2mU}{r^2}
+    \right)p,
+    \\[5pt]
+    u_\varphi &= \frac{1}{\Lambda }\, \left(
+        \left(\frac{2U}{r}+\Sigma\right)\partial_r -\frac{m\widetilde \omega}{r}
+    \right)p.
+    \end{aligned}
+\end{equation}
+
+The substitution of the result into the continuity equation (\ref{continuity-eq}) leads to the equation 
+\begin{equation}\label{p_eq_init}
+    \frac{\widetilde\omega^2}{r}\left(\partial_r
+        \frac{r}{\Lambda}\partial_r 
+        -
+    \frac{m(m+2\Sigma/\widetilde \omega)}{r\Lambda}
+        +
+    \frac{2mU\Lambda^\prime}{r\widetilde \omega \Lambda^2}
+    \right)p 
+    +
+    \partial_z^2 p = 0,    
+\end{equation}
+where the combination $\Lambda = \widetilde \omega^2 - 2(U/r)(2U/r+\Sigma)$ and the prime denotes differentiation with respect to radial coordinate $r$. We consider only the waves which propagate against the current, so $mU<0$ and $\omega$ is large enough. As a result, no the shifted frequency $\widetilde\omega$ neither $\Lambda$ turn to zero, so the equation (\ref{p_eq_init}) is everywhere regular. A singularity would correspond to an instability. In the experiment, we do observe a continuous spectrum in the range $mU>0$. Its amplitude is moderate so it is possible to disregard the nonlinear interaction between waves with $mU<0$ and $mU>0$.
+
+The boundary conditions are $\partial_z p =0$ at the bottom and $\partial_rp=0$ at the side boundary. At the free surface, the kinematic boundary condition (\ref{BC:kinematic}) becomes $-i\widetilde\omega h = u^z $. Its combination with the dynamic boundary condition (\ref{BC:dynamic}) and the vertical component of the Euler equation (\ref{u_r_init}) leads to the boundary condition for $p$ at $z=0$:
+\begin{equation}\label{BC-for-p:free-surafec}
+    \big( g \partial_z - \widetilde\omega^2\big) p 
+    =
+    0.
+\end{equation}
+
+When the mean flow is absent, the wave equation (\ref{p_eq_init}) is the Bessel equations of order $m$. It is possible to solve the problem via the separation of variables. Assuming that $\partial_z^2 p = k^2 p$, one finds $p_k = {\mathrm J}_m(kr)\cosh(k(z+D))$. The selection in wavenumber $k$ is governed by the boundary condition at the side wall, ${\mathrm J}^\prime_m(kR) = 0$. The boundary condition at the free surface (\ref{BC-for-p:free-surafec}) determines the wave frequency $\omega$. 
+
+In the presence of a mean flow, equation (\ref{p_eq_init}), supplemented by boundary conditions at rigid boundaries, can still be solved using the method of separation of variables. But the boundary condition (\ref{BC-for-p:free-surafec}) depends on the radial coordinate now, that leads to the complete problem does not admit separation of variables.
+
+We solve the problem numerically. We find first $N$ eigenfunctions ${\mathcal F}_i(r,z)$ and wavenumbers $k_i$ for the problem (\ref{p_eq_init}) which includes the boundary conditions at the bottom and side wall. The result of the action of the linear operator $\hat {\mathcal B} = g \partial_z - \widetilde\omega^2$ (\ref{BC-for-p:free-surafec}) on an eigenfunction at the surface is $\hat {\mathcal B} {\mathcal F}_i = B(k_i){\mathcal F}_i$, where $B(k_i) = g\tanh(k_iD) + \widetilde\omega^2$. For the further calculations, we construct orthonormal basis ${\mathcal J}_i(r)$ formed by the first $N$ solutions of (\ref{p_eq_init}) in the case $U=0$ and taken at the surface. The measure $r\mathrm{d}r$ in $r$-space is used when calculating the scalar product. Denote the true solution 
+\begin{equation}
+    p = \sum_{i=1}^N A_i {\mathcal F}_i.
+\end{equation}
+Using the basis, the condition (\ref{BC-for-p:free-surafec}) at the free surface becomes
+\begin{equation}
+    \sum_{i=1}^N B_{ji}A_i = 0,
+    \qquad 
+    B_{ji}
+    = 
+    \big\langle {\mathcal J}_j \big\vert B(k_i)\, {\mathcal F}_i(z=0)\big\rangle.
+\end{equation}
+A non-trivial solution exists only if the matrix is degenerate, $\mathop{\mathrm{det}}|B_{ij}| = 0$. The determinant is a real function of the frequency $\omega$, so an error following from finite cutoff $N$ in the sums only slightly shifts a solution. For our purposes, it was enough to take $N=15$. We denote a solution $\omega_{m,n}$, where an increase in natural $n$ corresponds to an increase in the eigen frequency. When the frequency $\omega_{m,n}$ is found, the coefficients $A_i$ are determined as the zero-value eigenvector of the matrix~$B_{ji}$.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/map.pdf}
+    \caption{Map of eigenmodes on the plane of axial number $m$ (horizontal axis) and frequency in hertz (vertical axis). Pluses and crosses denote analytically found eigenmodes. Grey areas correspond to WKB-estimate for frequency bands where the modes are trapped by the mean flow. Filled circles describes experimentally measured wave fields, the colors correspond to mean energy stored in the fields. The curved lines depict correspondence between spatial profiles of analytically found modes and experimentally observed wave field.}
+    \label{fig:map}
+\end{figure}
+
+
+The results of the numerical procedure is depicted in Figure~\ref{fig:map}. The pluses and crosses on the plane $m$-$\omega$ correspond to the found eigenmodes. One can see that the solutions are arranged in curved horizontal lines. Each line corresponds to the fixed radial number $n$ which is the number of half-waves in the modes in the radial direction. The modes with lowest frequency at fixed $m$ have $n=1$. In these modes, the velocity component $u_\varphi$ turns to zero only at $r=0$. In others modes, $u_\varphi$ turns to zero additionally $n-1$ times within the interval $r<R$. Examples of radial profiles of the eigenmodes are plotted in Figure`\ref{fig:wave-theory}. 
+
+Consider those waves, for which the water is deep but the capillary effects are till negligible. This means, that the characteristic wavelength of the wave $\lambda$ should lie in interval $4\,\text{cm} < \lambda < 60\,\text{cm}$, where the low bound corresponds to the minimum of the group velocity of the capillary-gravity waves and the upper limit is $2\pi D$. In order to estimate the radial wave field dependence, one can consider short-wave limit using WKB-theory. The local dispersion law is $\widetilde \omega^2  = gk$. The wavenumber squared is $k^2 = m^2/r^2 + k_r^2$, where $k_r$ is the radial wavenumber. Thus, the dependence
+\begin{equation}\label{eq:kr}
+    k_r^2 (r;\omega,m)
+    =
+    \frac{\widetilde\omega^4}{g^2} - \frac{m^2}{r^2}
+\end{equation}
+describes the radial oscillations of the velocity field in the mode. When approaching the vortex center, $k_r$ turns to zero at some $r=r_l$ due to the centrifugal force represented by the last term in (\ref{eq:kr}). If the ring current is zero or weak enough, $k_r$ remains real at all $r>r_l$. This means, that the wave reaches the side wall and reflects from it. If the current is strong enough, then $k_r$ turns to zero again at some $r_r > r_l$. In the case, the wave is anticipated to be trapped (i.e. localized) within the ring current. In Figure~\ref{fig:map}, the area where the point $r_r$ exists is colored by light gray. However, the potential well should be deep enough for the localization indeed occurs, so the gray area slightly overestimates an existence of localized mode. The modes denoted by crosses are indeed localized, so their amplitude exponentially decays when approaching the side wall. 
+
+\begin{figure}[t]
+\begin{picture}(250,150)
+    \put(0,-10){\includegraphics[width=1.0\linewidth]{figures/wave-theory.pdf}}
+    \put(53,100){\rotatebox{70}{\scriptsize $(3,\,6)$}}
+    \put(115,120){$(8,\,1)$}
+    \put(105,45){$(10,\,2)$}
+    \put(130,30){\rotatebox{33}{$(3,\,2)$}}
+\end{picture}
+\caption{Examples of mode profiles in radial direction in term of $u_\varphi$. Pairs of numbers near each curve stand for $(m,\,n)$.}
+\label{fig:wave-theory}
+\end{figure}
+
+In Figure~\ref{fig:wave-theory}, examples of radial mode profiles are plotted in terms of the azimuth velocity component $u_\varphi$. Dashed curves correspond to those modes which can be considered localized in radial direction by the mean flow. 
+
+\begin{figure}[t]
+    \centering
+    \begin{picture}(250,210)
+    \put(1.9,145){\includegraphics[width=0.447\linewidth]{figures/3-3.pdf}}
+    \put(70,190){$6\Omega, \ \ (3,\,3)$}
+    \put(18,195){\textbf{a)}}
+    
+    \put(130,145){\includegraphics[width=0.45\linewidth]{figures/3-4, 3-5.pdf}}
+    \put(193,200){$7\Omega, \ \ (3,\,4)$}
+    \put(193,185){$8\Omega, \ \ (3,\,5)$}
+    \put(225,166){\textbf{b)}}
+    
+    \put(2.8,73){\includegraphics[width=0.45\linewidth]{figures/4-1.pdf}}
+    \put(70,105){$4\Omega, \ \ (4,\,1)$}
+    \put(18,115){\textbf{c)}}
+    
+    \put(130,72.5){\includegraphics[width=0.45\linewidth]{figures/4-4, 4-6.pdf}}
+    \put(193,120){$7\Omega, \ \ (4,\,4)$}
+    \put(193,105){$9\Omega, \ \ (4,\,6)$}
+    \put(145,120){\textbf{d)}}
+    
+    \put(0,0){\includegraphics[width=0.458\linewidth]{figures/7-1.pdf}}
+    \put(70,55){$5\Omega$}
+    \put(95,45){$4\Omega$}
+    \put(20,50){$(7,\,1)$}
+    \put(18,25){\textbf{e)}}
+
+    \put(130,0){\includegraphics[width=0.46\linewidth]{figures/7-2.pdf}}
+    \put(197,50){$6\Omega, \ \ (7,\,2)$}
+    \put(145,35){\textbf{f)}}
+    
+    \end{picture}
+    
+    \caption{The matching between the theoretically predicted mode radial profiles in terms of absolute value of $u_\varphi$ (dashed lines) and the experimentally measured absolute value of amplitude of $u_\varphi$ oscillations at fixed frequency and with fixed axial number $m$ (solid lines). Marks $l\Omega$ with natural $l$ correspond to the measured frequency, see spectrum n Figure~\ref{fig:spectrum}. Dashed lines correspond to theoretically calculated mode profiles; $(m,\,n)$ are the mode wavenumbers as in Figure~\ref{fig:wave-theory}.}
+    \label{fig:modes-exp}
+\end{figure}
+
+
+
+\section{Comparison of the experimental data and the theoretical results}
+\label{sec:results}
+
+Now we proceed to compare our experimental observations with the theoretical predictions. One should remember that the theory considered the basin to be circle whereas it is square in experiment, so the mode matching should be expected to be only qualitative.
+
+The experimentally measured modes are forced oscillations, so their frequencies are multiples $l\Omega$ of the rotation angular velocity $\Omega$ of the disc, see spectrum in Figure~\ref{fig:spectrum}. In Figure~\ref{fig:modes-exp}, the radial profiles $|u_\varphi|$ for selected modes are plotted. Along the radial coordinate $r$, the measurements were carried till a full circle or radius $r$ can be placed into the basin, that is $r<35\,\text{cm}$. We plot the wave fields only up to radius $32\,\text{cm}$ due to the presence of a turbulent boundary layer of thickness $\approx 3\,\text{cm}$ near the side walls, where the measurements contain too large error. For example, the matching for the mode $(m,n) = (3,3)$ is rather good in Figure~\ref{fig:modes-exp}a and is quantitative. We note that the first node of the theoretically calculated profile is slightly closer to the basin center than than the node of the experimentally measured profile. The rule is fulfilled for others low-$n=2,3$ modes at different $m$ as well, see e.g. Figure~\ref{fig:modes-exp}f. This is the reason why the corresponding $n$ are chosen in the case of higher radial numbers $n$, see Figures~\ref{fig:modes-exp}b,d, although here one has rather qualitative agreement instead of a quantitative one.
+
+The closer frequency $l\Omega$ is to the eigenfrequency of the mode, the higher is its amplitude. The relative amplitudes of the measured modes are given in Figure~\ref{fig:modes-exp} which allows one to evaluate the proximity to a resonance. In Figure~\ref{fig:map}, intensities of all wave fields measured at fixed $m$ and $l$ are depicted by colored filled circles. The matching is depicted by curved lines connecting theoretically calculated modes and experimentally observed wave fields.
+
+Ones we have established the mode matching, we tried to observe those modes which are localized in radial direction by the mean flow. According to Figure~\ref{fig:map}, the lowest axial number of interest in the case is $m=7$. However, the mode was not detected, see Figure~\ref{fig:modes-exp}e. Instead, some extremely delocalized surface oscillations with relatively low amplitude was observed. This observation cannot be explained by relatively high value of $m$, since the mode $(7,2)$ is well observed, see Figure~\ref{fig:modes-exp}f. The same story is for $m=8$; the radial profile of theoretically calculated mode (8,1) is plotted in Figure~\ref{fig:wave-theory}. We make a conclusion that the localized modes are not excited in our experiment. As the distinctive feature of localized modes is the absence of interaction with the side walls, we make an inference that the chosen way of the excitation of the oscillatory motion essentially includes the fluid interaction with the side walls.
+
+When $\sqrt{m^2+n^2}\gtrsim 9$, the nodes in the experimentally measured profiles are typically less pronounced, so a comparison with the theoretical predictions becomes ambiguous. Possibly, this is due to limiting accuracy of our measurements or simultaneous excitation of more than one eigenmode. As these wave numbers correspond to rather short waves for which the capillary effects are notable we are not interesting in these modes here. 
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Surface waves travelling against a ring current established in a closed basin of square shape are experimentally observed.  The forcing of the surface ways is produced due to the disk generating the ring current has a small tilt. The observations are approved by a systematic comparison with the numerical results obtained by the means of developed theory. The theory predicts that both delocalized and trapped modes should be presented among the modes excited in the experiment. However, only delocalized mode were detected experimentally. Suggested explanation argues to the trapped modes do not interact with the side walls of the basin, so they are not excited under the chosen way of surface wave motion forcing. This are questions to be experimentally explored what modes will be excited in a basin of cylindrical shape and how to excite trapped modes.
+
+
+
+\section{Acknowledgments}
+
+Vointsev Ivan was supported by the Basic Research Program of HSE University (project HSE-BR-2025-57).
+
+
+
+\bibliography{wave-trapping}
+
+\end{document}
+
