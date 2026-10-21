@@ -96,43 +96,43 @@ We describe the experimental setup in Section~\ref{sec:experimental-setup} and d
 \section{Experimental setup}
 \label{sec:experimental-setup}
 
-A square basin of size $70\times 70 \times 10\,\text{cm}$ is filled by distilled water of depth $D = 10\,\text{cm}$. The side walls of the basing are made of glass. A disk of radius $30\,\text{cm}$ was mounted flush at the center of the bottom. The disk can rotate around the vertical axis with a fixed angular velocity under action of a drive. A sketch of the experimental setup is given in the inset of Figure~\ref{fig:U-profiles}.
+A square basin with dimensions $70\times 70 \times 10\,\text{cm}$ is filled with distilled water to a depth of $D = 10\,\text{cm}$. The basin sidewalls are made of glass. A disk of radius $30\,\text{cm}$ is mounted flush with the basin bottom at its center. A drive rotates the disk about a vertical axis at a fixed angular velocity. A schematic of the experimental setup is shown in the inset of Figure~\ref{fig:U-profiles}.
 
 \begin{figure}[t]
 \begin{picture}(230,140)
     \put(0,0){\includegraphics[width=0.95\linewidth]{figures/profiles.pdf}}
     \put(35,12){\includegraphics[width=0.35\linewidth]{figures/scheme_nut.pdf}}
 \end{picture}
-\caption{Radial profiles of the azimuth mean velocity in the experiment. Thick orange line is the result of averaging over the angle; at distances $r>35\,\text{cm}$ the averaging is implemented only over available part of the full circle. Solid blue (along one direction) and black (along the other direction) lines corresponds to the velocity profile along lines parallel to the side walls. Dashed line is for a diagonal direction. Inset: a scheme of the experimental setup.}
+\caption{Radial profiles of the mean azimuthal velocity measured in the experiment. The thick orange line shows the azimuthal average; at distances $r>35\,\text{cm}$, the average is taken only over the portion of the circle within the basin. The solid blue and black lines show the velocity profiles along the two directions parallel to the sidewalls. The dashed line shows the profile along a diagonal. Inset: schematic of the experimental setup.}
 \label{fig:U-profiles}
 \end{figure}
 
-The horizontal components of the fluid velocity $v^x$, $v^y$ at its surface is measured by PIV-method. Across the free surface, a polyamide PA-12 particles are scattered. A camera detecting the horizontal motion of the particles is mounted above the basin at its axis. For each experiment, a video of duration $T=175\,\text{s}$ is recorded, the frames rate is $24\,\text{Hz}$.
+The horizontal components of the fluid velocity at the free surface, $v^x$ and $v^y$, are measured using particle image velocimetry (PIV). Polyamide PA-12 particles are scattered over the free surface. A camera mounted above the center of the basin records the horizontal motion of the particles. For each experiment, a video of duration $T=175\,\text{s}$ is recorded at a frame rate of $24\,\text{Hz}$.
 
-Ten roughly uniformly distributed angular velocities in range $0.024 ... 0.3\,\text{Hz}$ were tested. In each case, the radial profile of azimuth velocity $U$ was measured in the polar system $\{r,\varphi\}$ co-centered with the basin. It was observed that all the profiles coincide after the normalizing their amplitude on the disk rotation speed. This is an evidence for the mean flow has a linear response and it can be considered as a laminar one. The profiles $U(r)$ averaged over the azimuth angle $\varphi$ and for selected directions are plotted in Figure~\ref{fig:U-profiles}. In what follows, we are interested only in the experiment with the highest disk rotation speed $\Omega \approx 0.31\,\text{Hz}$. We deal with pure water, so the Reynolds number characterizing the mean flow is $\mathrm{Re} = 40 000$ taking characteristic velocity and length be equal to $25\,\text{cm}/\text{s}$ and $15\,\text{cm}$ respectively. 
+Ten approximately uniformly spaced angular velocities in the range $0.024 ... 0.3\,\text{Hz}$ were tested. In each case, the radial profile of the azimuthal velocity $U$ was measured in a polar coordinate system $\{r,\varphi\}$ centered on the basin. All profiles were found to coincide after their amplitudes were normalized by the disk rotation speed. This indicates that the mean flow responds linearly and can be considered laminar. The profiles $U(r)$, both averaged over the azimuthal angle $\varphi$ and measured along selected directions, are plotted in Figure~\ref{fig:U-profiles}. In what follows, we consider only the experiment with the highest disk rotation speed, $\Omega \approx 0.31\,\text{Hz}$. For pure water, the Reynolds number characterizing the mean flow is $\mathrm{Re} = 40 000$, using a characteristic velocity of $25\,\text{cm}/\text{s}$ and a characteristic length of $15\,\text{cm}$.
 
-Our setup is similar to that explored in \cite{yang2019axisymmetric}. The difference is only the basing in our case has square form, whereas it has cylindrical geometry in \cite{yang2019axisymmetric}. Despite the difference, the radial profiles $U(r)$ correspond well to each other. In particular, the core within which the fluid exhibits the solid rotation is of radius \hbox{$\approx 14\,\text{cm}$} in our case, that is one half of the disk radius. The ratio corresponds to the $U(r)$-profiles in \cite{yang2019axisymmetric}, where the position of the $U(r)$-maximum was established to depend on the aspect ratio $D/R$. The angular velocity $U/r$ reaches its maximum $\Omega$ at the center and then slightly decreases toward the core edge, that corresponds to the observations \cite{yang2019axisymmetric} as well. We did not measured the vertical profile of the azimuth velocity, which we believe to be uniform excepting the thin boundary layer near the bottom according to the measurements of~\cite{yang2019axisymmetric}. 
+Our setup is similar to that studied in \cite{yang2019axisymmetric}, differing only in the basin geometry: our basin is square, whereas that in \cite{yang2019axisymmetric} is cylindrical. Despite this difference, the radial profiles $U(r)$ agree well. In particular, the core in which the fluid undergoes solid-body rotation has a radius of \hbox{$\approx 14\,\text{cm}$} in our setup, approximately half the disk radius. This ratio is consistent with the $U(r)$ profiles in \cite{yang2019axisymmetric}, where the position of the maximum of $U(r)$ was found to depend on the aspect ratio $D/R$. The angular velocity $U/r$ reaches its maximum $\Omega$ at the center and decreases slightly toward the core edge, also consistent with the observations in \cite{yang2019axisymmetric}. We did not measure the vertical profile of the azimuthal velocity, but we expect it to be uniform except within the thin boundary layer near the bottom, based on the measurements in~\cite{yang2019axisymmetric}.
 
-The fluid surface deformation due to the centrifugal forces is relatively small. To estimate the difference in water surface levels between the edge and the center, write down Euler's equation.
+The deformation of the fluid surface due to centrifugal forces is relatively small. To estimate the difference in surface elevation between the edge and the center, we use Euler's equation,
 \begin{equation}\label{eq:N-S}
     \partial_t {\bm v} + ({\bm v}\nabla){\bm v} = - \nabla P_{\mathrm{total}},
 \end{equation}
-where we took the water density be equal to unity and the physical pressure the pressure is $P_{\mathrm{total}} = P - gz$. If the flow is axially symmetric and constant, the radial projection of Euler equation (\ref{eq:N-S}) is 
+where the water density is set to unity and the physical pressure is $P_{\mathrm{total}} = P - gz$. For an axisymmetric, steady flow, the radial component of Euler's equation (\ref{eq:N-S}) is
 \begin{equation}
     \partial_r P - U^2/r = 0. 
 \end{equation}
-The boundary condition is $P = gH$ at the fluid surface $z=H(r)$ as the physical pressure $P_{\mathrm{total}} = 0$ here up to the constant atmospheric pressure. At given $U(r)$, the solution for the pressure is 
+The boundary condition at the fluid surface $z=H(r)$ is $P = gH$, since the physical pressure $P_{\mathrm{total}} = 0$ after subtracting the constant atmospheric pressure. For a given $U(r)$, the pressure solution gives
 \begin{equation}
     H(r) = H(0) 
     + \frac{1}{g}\int\limits_0^r \mathrm{d}r^\prime \frac{U^2(r^\prime)}{r^\prime},
     \qquad 
     \int\limits_0^R Hr\mathrm{d}r = 0.
 \end{equation}
-The last integral condition states, than the total volume of the fluid is conserved. For the profile presented in Figure~\ref{fig:spectrum}, the difference $H(R) - H(0) \approx 8\,\text{mm}$ assuming $R=47\,\text{cm}$. This is 12 times smaller than the water depth~$D$. 
+The integral condition expresses conservation of the total fluid volume. For the profile shown in Figure~\ref{fig:spectrum}, the difference is $H(R) - H(0) \approx 8\,\text{mm}$, assuming $R=47\,\text{cm}$. This is approximately one-twelfth of the water depth~$D$.
 
-There are secondary flows directed in radial and vertical direction and produces by the boundary layer \cite{yang2019axisymmetric}. The flows are small compared to the azimuth velocity. In our case, the measured radial mean velocity at the surface is relatively small as well, $U^r/U^\varphi\sim 0.1$ and it is not axially symmetric but follows the symmetry of the square basin.
+The boundary layer generates secondary flows in the radial and vertical directions \cite{yang2019axisymmetric}. These flows are weak compared with the azimuthal flow. In our setup, the measured mean radial velocity at the surface is also relatively small, $U^r/U^\varphi\sim 0.1$. It is not axisymmetric but instead follows the symmetry of the square basin.
 
-The disk rotation excites oscillatory wave as well, since the disk plane is slightly tilted at the angle equal to $1^\circ$, whereas the rotation axis is directed vertically with relatively higher precision. Thus the disk rotation periodically influences the fluid motion. The measured frequency spectrum of the velocity field demonstrates sufficient response only at the harmonics that are multiples of $\Omega$, see Figure~\ref{fig:spectrum}. The peaks are quite narrow, so a possible nonlinear broadening of the peaks can be neglected and the system can be assumed to be in linear response regime. No monotonic behavior of the peak amplitude with the frequency is observed. This is a consequence of those overtones of $\Omega$ with high intensities are closer to one of resonant modes of the system than the others, see below.
+The disk rotation also excites waves because the disk plane is tilted by $1^\circ$ from the horizontal, whereas the rotation axis is aligned with the vertical to greater precision. The rotating disk thus periodically perturbs the fluid motion. The measured frequency spectrum of the velocity field shows an appreciable response only at integer multiples of $\Omega$; see Figure~\ref{fig:spectrum}. The peaks are narrow, so nonlinear peak broadening can be neglected and the system can be assumed to be in the linear-response regime. The peak amplitude does not vary monotonically with frequency. This is because the more intense overtones of $\Omega$ lie closer to resonant modes of the system than the weaker overtones, as discussed below.
 
 
 \begin{figure}[t]
@@ -141,7 +141,7 @@ The disk rotation excites oscillatory wave as well, since the disk plane is slig
     \put(225,10){\vbox{\hbox{{\large$\omega,$}} \hbox{Hz}}}
     \put(0,55){\rotatebox{90}{{\large $E_\omega$}, arb. u.}}
     \end{picture}
-    \caption{The energy spectrum of the horizontal motion at the surface, $E_\omega = (\langle|v^x_\omega|^2\rangle + \langle |v^y_\omega|^2\rangle)/2$, angle brackets denote averaging over the surface. The positions of the peaks are equal to integers multiplies of the disk rotation angular velocity $\Omega$.}
+    \caption{Energy spectrum of the horizontal motion at the surface, $E_\omega = (\langle|v^x_\omega|^2\rangle + \langle |v^y_\omega|^2\rangle)/2$, where angle brackets denote averaging over the surface. The peaks occur at integer multiples of the disk rotation angular velocity $\Omega$.}
     \label{fig:spectrum}
 \end{figure}
 
