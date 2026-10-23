@@ -224,6 +224,7 @@ Substituting these expressions into the continuity equation (\ref{continuity-eq}
 \end{equation}
 where $\Lambda = \widetilde \omega^2 - 2(U/r)(2U/r+\Sigma)$ and the prime denotes differentiation with respect to the radial coordinate $r$. We consider only waves propagating against the current, so $mU<0$, with $\omega$ sufficiently large. Under these conditions, neither the shifted frequency $\widetilde\omega$ nor $\Lambda$ vanishes, and equation (\ref{p_eq_init}) is regular everywhere. A singularity would correspond to an instability. Experimentally, we observe a continuous spectrum in the range $mU>0$. Its amplitude is moderate, allowing us to neglect nonlinear interactions between waves with $mU<0$ and $mU>0$.
 
+% TODO: \partial_r p = 0 != u_r = 0 on sidewall
 The boundary conditions are $\partial_z p =0$ at the bottom and $\partial_rp=0$ at the sidewall. At the free surface, the kinematic boundary condition (\ref{BC:kinematic}) becomes $-i\widetilde\omega h = u^z $. Combining this condition with the dynamic boundary condition (\ref{BC:dynamic}) and the vertical component of Euler's equation (\ref{u_r_init}) gives the boundary condition for $p$ at $z=0$:
 \begin{equation}\label{BC-for-p:free-surafec}
     \big( g \partial_z - \widetilde\omega^2\big) p 
@@ -235,7 +236,7 @@ In the absence of a mean flow, the wave equation (\ref{p_eq_init}) reduces, afte
 
 In the presence of a mean flow, equation (\ref{p_eq_init}), together with the conditions at the rigid boundaries, can still be solved by separation of variables. However, the free-surface boundary condition (\ref{BC-for-p:free-surafec}) now depends on the radial coordinate, so the full problem does not admit separation of variables.
 
-We solve the full problem numerically. We determine the first $N$ eigenfunctions ${\mathcal F}_i(r,z)$ and wavenumbers $k_i$ of equation (\ref{p_eq_init}), subject to the bottom and sidewall boundary conditions. The action of the linear operator $\hat {\mathcal B} = g \partial_z - \widetilde\omega^2$ from (\ref{BC-for-p:free-surafec}) on an eigenfunction at the surface is $\hat {\mathcal B} {\mathcal F}_i = B(k_i){\mathcal F}_i$, where $B(k_i) = g\tanh(k_iD) + \widetilde\omega^2$. We then construct an orthonormal basis ${\mathcal J}_i(r)$ from the first $N$ solutions of (\ref{p_eq_init}) for $U=0$, evaluated at the surface. The inner product uses the integration measure $r\mathrm{d}r$ for the radial coordinate $r$. We expand the solution as
+We solve the full problem numerically. We determine the first $N$ eigenfunctions ${\mathcal F}_i(r,z)$ and wavenumbers $k_i$ of equation (\ref{p_eq_init}), subject to the bottom and sidewall boundary conditions. The action of the linear operator $\hat {\mathcal B} = g \partial_z - \widetilde\omega^2$ from (\ref{BC-for-p:free-surafec}) on an eigenfunction at the surface is $\hat {\mathcal B} {\mathcal F}_i = B(k_i){\mathcal F}_i$, where $B(k_i) = g\tanh(k_iD) - \widetilde\omega^2$. We then construct an orthonormal basis ${\mathcal J}_i(r)$ from the first $N$ solutions of (\ref{p_eq_init}) for $U=0$, evaluated at the surface. The inner product uses the integration measure $r\mathrm{d}r$ for the radial coordinate $r$. We expand the solution as
 \begin{equation}
     p = \sum_{i=1}^N A_i {\mathcal F}_i.
 \end{equation}
